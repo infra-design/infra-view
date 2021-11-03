@@ -1,4 +1,4 @@
-# @infra-design/view
+# @infra-design/infra-view
 
 Create your UI in a simple way.
 
