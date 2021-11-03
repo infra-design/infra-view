@@ -22,6 +22,8 @@ pnpm add infra-view
 
 #### View
 
+Try to use full spellings instead of abbreviations, which will reduce the mental burden when developing. And we provide intelligent completions, so the time spent using abbreviations and full spellings is not too different.
+
 ```jsx
 import { View } from 'infra-view'
 
