@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/infra-design/infra-view/issues"
   },
-  "homepage": "https://github.com/infra-design/infra-view#readme"
+  "homepage": "https://github.com/infra-design/infra-view#readme",
+  "devDependencies": {
+    "typescript": "^4.4.4"
+  }
 }

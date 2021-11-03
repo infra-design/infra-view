@@ -1,0 +1,8 @@
+node_modules
+*.log
+*.tsbuildinfo
+*.js
+*.js.map
+*.d.ts
+*.d.ts.map
+.DS_Store

@@ -1,0 +1,5 @@
+esm
+node_modules
+pnpm-*.yaml
+packages/icons/src/index.ts
+packages/icons/src/icons
