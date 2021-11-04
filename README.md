@@ -71,15 +71,24 @@ import { View } from 'infra-view'
 
 export const App = () => {
   return (
-    <>
-      <View marginTop={{ sx: 1, md: 2, lg: 3, xl: 4 }}></View>
-      <View
-        marginTop={1}
-        paddingTop={1}
-        md={{ marginTop: 2, paddingTop: 2 }}
-        lg={{ marginTop: 3, paddingTop: 3 }}></View>
-    </>
+    <View
+      margin={1}
+      padding={1}
+      md={{ margin: 2, padding: 2 }}
+      lg={{ margin: 3, padding: 3 }}
+      xl={{ margin: 4, padding: 4 }}
+    />
   )
+}
+```
+
+##### Methods
+
+```jsx
+import { View } from 'infra-view'
+
+export const App = () => {
+  return <View></View>
 }
 ```
 
@@ -172,6 +181,34 @@ export const App = () => {
 }
 ```
 
+#### Conditional
+
+```jsx
+import { View } from 'infra-view'
+
+export const App = () => {
+  return (
+    <>
+      <View if={true}>If</View>
+      <View show={true}>Show</View>
+      <View hidden={true}>Hidden</View>
+    </>
+  )
+}
+```
+
+#### Theme
+
+> todo
+
+```jsx
+import { View } from 'infra-view'
+
+export const App = () => {
+  return <View>Theme</View>
+}
+```
+
 ### Layout
 
 We recommend to use `Layout` components to create your layout without direct use of `View` component.
@@ -235,6 +272,30 @@ export const App = () => {
     <Absolute top={10} left={10}>
       <div>UI</div>
     </Absolute>
+  )
+}
+```
+
+#### Container
+
+```jsx
+import { Container, View } from 'infra-view'
+
+export const App = () => {
+  return (
+    <Container
+      padding={10}
+      margin={10}
+      md={{
+        padding: 20,
+        margin: 20,
+      }}
+      lg={{
+        padding: 30,
+        margin: 30,
+      }}>
+      <View>UI</View>
+    </Container>
   )
 }
 ```
