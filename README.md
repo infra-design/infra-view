@@ -149,6 +149,7 @@ import { View } from 'infra-view'
 export const App = () => {
   return (
     <>
+      <View padding={[1, 2, 3, 4]}></View>
       <View
         text={{
           family: 'sans-serif',
@@ -199,13 +200,17 @@ export const App = () => {
 
 #### Theme
 
-> todo
-
 ```jsx
-import { View } from 'infra-view'
+import { View, useTheme } from 'infra-view'
 
 export const App = () => {
-  return <View>Theme</View>
+  const { padding, fontSize, lineHeight } = useTheme()
+
+  return (
+    <View padding={padding(1)} fontSize={fontSize(1)} lineHeight={lineHeight(2)}>
+      Theme
+    </View>
+  )
 }
 ```
 
