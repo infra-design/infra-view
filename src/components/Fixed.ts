@@ -2,6 +2,9 @@ import { jsx } from '@emotion/react'
 import { FC } from 'react'
 import { ViewProps } from '.'
 
-export const Fixed: FC<ViewProps> = () => {
-  return jsx('div')
+export const Fixed: FC<ViewProps> = (props) => {
+  return jsx('div', {
+    position: 'fixed',
+    ...props,
+  })
 }

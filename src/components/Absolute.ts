@@ -1,7 +1,10 @@
 import { jsx } from '@emotion/react'
 import { FC } from 'react'
-import { ViewProps } from '.'
+import { View, ViewProps } from '.'
 
-export const Absolute: FC<ViewProps> = () => {
-  return jsx('div')
+export const Absolute: FC<ViewProps> = (props) => {
+  return jsx(View, {
+    position: 'absolute',
+    ...props,
+  })
 }
