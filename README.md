@@ -206,28 +206,6 @@ export const App = () => {
 }
 ```
 
-#### Theme
-
-```jsx
-import { View, useTheme } from 'infra-view'
-
-export const App = () => {
-  const { fontSize, lineHeight } = useTheme()
-
-  return (
-    <View
-      fontSize={fontSize[0]}
-      lineHeight={lineHeight[1]}
-      md={{
-        fontSize: fontSize[2],
-        lineHeight: lineHeight[3],
-      }}>
-      Theme
-    </View>
-  )
-}
-```
-
 ### Layout
 
 We recommend to use `Layout` components to create your layout without direct use of `View` component.
@@ -304,6 +282,20 @@ export const App = () => {
 }
 ```
 
+#### Fixed
+
+```jsx
+import { Fixed } from 'infra-view'
+
+export const App = () => {
+  return (
+    <Fixed top={0} left={0} right={0} height={200}>
+      <div>UI</div>
+    </Fixed>
+  )
+}
+```
+
 #### Container
 
 ```jsx
@@ -326,4 +318,52 @@ export const App = () => {
     </Container>
   )
 }
+```
+
+### Theme
+
+#### Usage
+
+```jsx
+import { View, useTheme } from 'infra-view'
+
+export const App = () => {
+  const { fontSize, lineHeight } = useTheme()
+
+  return (
+    <View
+      fontSize={fontSize[0]}
+      lineHeight={lineHeight[1]}
+      md={{
+        fontSize: fontSize[2],
+        lineHeight: lineHeight[3],
+      }}>
+      Theme
+    </View>
+  )
+}
+```
+
+#### Create theme
+
+```jsx
+import { createTheme, baseTheme } from 'infra-view'
+
+export const theme = createTheme(baseTheme, {
+  margin: [2, 10, 20, 30],
+  padding: [10, 20, 30, 40],
+  fontSize: [12, 14, 16, 18],
+  lineHeight: [1.5, 1.7, 1.9, 2.1],
+  breakpoints: [0, 768, 1024, 1440],
+})
+```
+
+#### Update theme
+
+```jsx
+import theme from 'your-theme'
+
+theme.update({
+  margin: [1, 2, 3, 4],
+})
 ```
