@@ -27,7 +27,7 @@ Try to use full spellings instead of abbreviations, which will reduce the mental
 ```jsx
 import { View } from 'infra-view'
 
-export const App =() => {
+export const App = () => {
   return (
     <View
       display='block'
@@ -36,7 +36,7 @@ export const App =() => {
       height={20}
       background='black'
       hover={{
-        background='red'
+        background: 'red',
       }}
       md={{
         margin: 200,
@@ -54,13 +54,21 @@ export const App =() => {
 }
 ```
 
-##### Hidden
+##### Merge and extend
 
 ```jsx
 import { View } from 'infra-view'
 
+const Component = (props) => {
+  return <View margin={20} md={{ margin: 30 }} externalProps={props} />
+}
+
 export const App = () => {
-  return <View>UI</View>
+  return (
+    <Component padding={10} md={{ margin: 20 }}>
+      UI
+    </Component>
+  )
 }
 ```
 
@@ -82,13 +90,13 @@ export const App = () => {
 }
 ```
 
-##### Methods
+##### DisplayName
 
 ```jsx
 import { View } from 'infra-view'
 
 export const App = () => {
-  return <View></View>
+  return <View displayName='test'></View>
 }
 ```
 
@@ -246,8 +254,17 @@ import { Grid } from 'infra-view'
 
 export const App = () => {
   return (
-    <Grid columns={1} gap={20} md={{ columns: 2, gap: 30 }} lg={{ columns: 3, gap: 40 }}>
+    <Grid
+      columns={1}
+      gap={20}
+      md={{ columns: 2, gap: 30 }}
+      lg={{ columns: 3, gap: 40 }}
+      xm={{ columns: 4, gap: 50 }}>
       <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
     </Grid>
   )
 }
