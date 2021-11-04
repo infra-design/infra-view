@@ -212,10 +212,16 @@ export const App = () => {
 import { View, useTheme } from 'infra-view'
 
 export const App = () => {
-  const { padding, fontSize, lineHeight } = useTheme()
+  const { fontSize, lineHeight } = useTheme()
 
   return (
-    <View padding={padding(1)} fontSize={fontSize(1)} lineHeight={lineHeight(2)}>
+    <View
+      fontSize={fontSize[0]}
+      lineHeight={lineHeight[1]}
+      md={{
+        fontSize: fontSize[2],
+        lineHeight: lineHeight[3],
+      }}>
       Theme
     </View>
   )
