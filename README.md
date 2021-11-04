@@ -102,6 +102,36 @@ export const App = (props) => {
 }
 ```
 
+##### As
+
+Easy switch between components. Defaults to `div`.
+
+```jsx
+import { View } from 'infra-view'
+
+export const App = () => {
+  return (
+    <View as='div'>
+      <View as='button'>Button</View>
+    </View>
+  )
+}
+```
+
+##### Alias
+
+```js
+import { P, Span } from 'infra-view'
+
+export const App = () => {
+  return (
+    <P>
+      Same as use <Span>View</Span> as p.
+    </P>
+  )
+}
+```
+
 #### Combo
 
 ```jsx
