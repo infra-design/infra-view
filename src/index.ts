@@ -1,1 +1,2 @@
-export const View = () => {}
+export * from './components'
+export * from './theme'
