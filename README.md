@@ -198,8 +198,7 @@ import { View } from 'infra-view'
 export const App = () => {
   return (
     <>
-      <View if={true}>If</View>
-      <View show={true}>Show</View>
+      <View mount={true}>Mount</View>
       <View hidden={true}>Hidden</View>
     </>
   )
@@ -233,6 +232,8 @@ export const App = () => {
 
 #### Grid
 
+##### Usage
+
 ```jsx
 import { Grid } from 'infra-view'
 
@@ -248,11 +249,12 @@ export const App = () => {
       <div>2</div>
       <div>3</div>
       <div>4</div>
-      <div>5</div>
     </Grid>
   )
 }
 ```
+
+##### Grid template
 
 #### Center
 
