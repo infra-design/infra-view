@@ -1,10 +1,10 @@
 import { jsx } from '@emotion/react'
 import { FC } from 'react'
-import { ViewProps } from '.'
+import { ViewProps } from '..'
 
-export const Fixed: FC<ViewProps> = (props) => {
+export const Grid: FC<ViewProps> = (props) => {
   return jsx('div', {
+    display: 'grid',
     ...props,
-    position: 'fixed',
   })
 }
