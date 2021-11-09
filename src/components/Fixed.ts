@@ -4,7 +4,7 @@ import { ViewProps } from '.'
 
 export const Fixed: FC<ViewProps> = (props) => {
   return jsx('div', {
-    position: 'fixed',
     ...props,
+    position: 'fixed',
   })
 }
