@@ -1,5 +1,7 @@
 # infra-view
 
+> Work in progress. Not yet ready for public use.
+
 Create your UI in a simple way.
 
 ## Installation
