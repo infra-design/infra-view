@@ -1,5 +1,13 @@
 {
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"],
   "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "esm",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "allowJs": true,
     "incremental": true,
     "composite": true,
     "lib": ["ES2019"],
