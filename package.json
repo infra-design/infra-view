@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/infra-design/infra-view#readme",
   "devDependencies": {
-    "@emotion/react": "^11.5.0",
+    "@emotion/react": "^11.6.0",
     "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.0.2",
     "@types/react": "^17.0.34",
