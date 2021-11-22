@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@emotion/jest': ^11.6.0
   '@emotion/react': ^11.6.0
   '@testing-library/react': ^12.1.2
   '@types/jest': ^27.0.3
@@ -15,6 +16,7 @@ specifiers:
   typescript: ^4.5.2
 
 devDependencies:
+  '@emotion/jest': 11.6.0_@types+jest@27.0.3
   '@emotion/react': 11.6.0_bb8e79a4a12a744c3dc48cdef194d579
   '@testing-library/react': 12.1.2_react-dom@17.0.2+react@17.0.2
   '@types/jest': 27.0.3
@@ -400,8 +402,34 @@ packages:
       stylis: 4.0.10
     dev: true
 
+  /@emotion/css-prettifier/1.0.0:
+    resolution: {integrity: sha512-efxSrRTiTqHTQVKW15Gz5H4pNAw8OqcG8NaiwkJIkqIdNXTD4Qr1zC1Ou6r2acd1oJJ2s56nb1ClnXMiWoj6gQ==}
+    dependencies:
+      '@emotion/memoize': 0.7.5
+      stylis: 4.0.10
+    dev: true
+
   /@emotion/hash/0.8.0:
     resolution: {integrity: sha512-kBJtf7PH6aWwZ6fka3zQ0p6SBYzx4fl1LoZXE2RrnYST9Xljm7WfKJrU4g/Xr3Beg72MLrp1AWNUmuYJTL7Cow==}
+    dev: true
+
+  /@emotion/jest/11.6.0_@types+jest@27.0.3:
+    resolution: {integrity: sha512-HJrnA6ARrRlYYi0AzSvFG3eAupar0cmegnG1OkXfKdBvqfbuTDLAHVovbsg5EecFjq0wTCHDvbBllGz8RpadCg==}
+    peerDependencies:
+      '@types/jest': ^26.0.14 || ^27.0.0
+      enzyme-to-json: ^3.2.1
+    peerDependenciesMeta:
+      '@types/jest':
+        optional: true
+      enzyme-to-json:
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.16.3
+      '@emotion/css-prettifier': 1.0.0
+      '@types/jest': 27.0.3
+      chalk: 4.1.2
+      specificity: 0.4.1
+      stylis: 4.0.10
     dev: true
 
   /@emotion/memoize/0.7.5:
@@ -2894,6 +2922,11 @@ packages:
   /source-map/0.7.3:
     resolution: {integrity: sha512-CkCj6giN3S+n9qrYiBTX5gystlENnRW5jZeNLHpe6aue+SrHcG5VYwujhW9s4dY31mEGsxBDrHR6oI69fTXsaQ==}
     engines: {node: '>= 8'}
+    dev: true
+
+  /specificity/0.4.1:
+    resolution: {integrity: sha512-1klA3Gi5PD1Wv9Q0wUoOQN1IWAuPu0D1U03ThXTr0cJ20+/iq2tHSDnK7Kk/0LXJ1ztUB2/1Os0wKmfyNgUQfg==}
+    hasBin: true
     dev: true
 
   /sprintf-js/1.0.3:

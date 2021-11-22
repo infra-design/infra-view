@@ -6,6 +6,7 @@ const config: InitialOptionsTsJest = {
     ...tsjPreset.transform,
   },
   testEnvironment: 'jsdom',
+  snapshotSerializers: ['@emotion/jest/serializer'],
   extensionsToTreatAsEsm: ['.ts', '.tsx'],
   globals: {
     'ts-jest': {
