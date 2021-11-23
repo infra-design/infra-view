@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<View /> 1`] = `
+<div>
+  <div
+    class="emotion-0"
+  />
+</div>
+`;
+
+exports[`<View as='button' /> 1`] = `
+<div>
+  <button
+    class="emotion-0"
+  />
+</div>
+`;
+
+exports[`<View position='absolute' /> 1`] = `
+.emotion-0 {
+  position: absolute;
+}
+
+<div>
+  <div
+    class="emotion-0"
+  />
+</div>
+`;
