@@ -2,8 +2,8 @@ import { render } from '@testing-library/react'
 import React from 'react'
 import { View } from '../src'
 
-test('render default View component', async () => {
-  const view = render(<View></View>)
+test('<View />', async () => {
+  const view = render(<View />)
 
   expect(view.container).toMatchInlineSnapshot(`
     <div>
@@ -14,8 +14,8 @@ test('render default View component', async () => {
   `)
 })
 
-test('render View as button', () => {
-  const view = render(<View as='button'></View>)
+test(`<View as='button' />`, () => {
+  const view = render(<View as='button' />)
 
   expect(view.container).toMatchInlineSnapshot(`
     <div>
