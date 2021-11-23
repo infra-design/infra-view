@@ -15,7 +15,7 @@ test(`<View as='button' />`, () => {
 })
 
 test(`<View position='absolute' />`, () => {
-  const view = render(<View position='absolute'></View>)
+  const view = render(<View position='absolute' />)
 
   expect(view.container).toMatchSnapshot()
 })
