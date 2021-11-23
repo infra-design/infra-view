@@ -1,9 +1,8 @@
 import { render } from '@testing-library/react'
-import { createElement } from 'react'
 import { View } from '../src'
 
-test('View component', async () => {
-  render(createElement(View))
+test('render default View component', async () => {
+  render(<View></View>)
 
   expect(true).toBe(true)
 })
