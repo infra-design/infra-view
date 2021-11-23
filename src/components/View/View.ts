@@ -5,13 +5,15 @@ export interface ViewProps {
   id?: string
   as?: string
   position?: CSSProperties['position']
+  margin?: CSSProperties['margin']
 }
 
 export const View: FC<ViewProps> = (props) => {
-  const { as = 'div', id, position } = props
+  const { as = 'div', id, position, margin } = props
 
   const css = {
     position,
+    margin,
   }
 
   return jsx(as, {

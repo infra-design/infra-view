@@ -19,3 +19,9 @@ test(`<View position='absolute' />`, () => {
 
   expect(view.container).toMatchSnapshot()
 })
+
+test(`<View margin={10} />`, () => {
+  const view = render(<View margin={10} />)
+
+  expect(view.container).toMatchSnapshot()
+})

@@ -16,6 +16,18 @@ exports[`<View as='button' /> 1`] = `
 </div>
 `;
 
+exports[`<View margin={10} /> 1`] = `
+.emotion-0 {
+  margin: 10px;
+}
+
+<div>
+  <div
+    class="emotion-0"
+  />
+</div>
+`;
+
 exports[`<View position='absolute' /> 1`] = `
 .emotion-0 {
   position: absolute;
