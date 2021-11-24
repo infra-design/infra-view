@@ -18,6 +18,18 @@ exports[`<View as='button'>Button</View> 1`] = `
 </div>
 `;
 
+exports[`<View backgroundImageUrl='https://foo/bar.jpg' /> 1`] = `
+.emotion-0 {
+  background-image: url("https://foo/bar.jpg");
+}
+
+<div>
+  <div
+    class="emotion-0"
+  />
+</div>
+`;
+
 exports[`<View margin={10} /> 1`] = `
 .emotion-0 {
   margin: 10px;

@@ -6,14 +6,22 @@ export interface ViewProps {
   as?: string
   position?: CSSProperties['position']
   margin?: CSSProperties['margin']
+  backgroundImageUrl?: string
 }
 
 export const View: FC<ViewProps> = (props) => {
-  const { as = 'div', id, position, margin, children } = props
+  const { as = 'div', id, position, margin, backgroundImageUrl, children } = props
 
-  const css = {
+  const css: CSSProperties = {
     position,
-    margin,
+  }
+
+  if (margin) {
+    css.margin = margin
+  }
+
+  if (backgroundImageUrl) {
+    css.backgroundImage = `url("${backgroundImageUrl}")`
   }
 
   return jsx(
