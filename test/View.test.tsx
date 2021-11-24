@@ -18,6 +18,30 @@ test('<View><View></View></View>', async () => {
   expect(view.container).toMatchSnapshot()
 })
 
+test('<View isMounted={true} />', () => {
+  const view = render(<View isMounted={true} />)
+
+  expect(view.container).toMatchSnapshot()
+})
+
+test('<View isMounted={false} />', () => {
+  const view = render(<View isMounted={false} />)
+
+  expect(view.container).toMatchSnapshot()
+})
+
+test('<View isHidden={true} />', () => {
+  const view = render(<View isHidden={true} />)
+
+  expect(view.container).toMatchSnapshot()
+})
+
+test('<View isHidden={false} />', () => {
+  const view = render(<View isHidden={false} />)
+
+  expect(view.container).toMatchSnapshot()
+})
+
 test(`<View as='button'>Button</View>`, () => {
   const view = render(<View as='button'>Button</View>)
 

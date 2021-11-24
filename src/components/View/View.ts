@@ -2,6 +2,8 @@ import { jsx } from '@emotion/react'
 import { CSSProperties, FC } from 'react'
 
 export interface ViewProps {
+  isMounted?: boolean
+  isHidden?: boolean
   id?: string
   as?: string
   position?: CSSProperties['position']
@@ -10,10 +12,27 @@ export interface ViewProps {
 }
 
 export const View: FC<ViewProps> = (props) => {
-  const { as = 'div', id, position, margin, backgroundImageUrl, children } = props
+  const {
+    as = 'div',
+    id,
+    position,
+    margin,
+    backgroundImageUrl,
+    children,
+    isMounted = true,
+    isHidden = false,
+  } = props
+
+  if (!isMounted) {
+    return null
+  }
 
   const css: CSSProperties = {
     position,
+  }
+
+  if (isHidden) {
+    css.display = 'none'
   }
 
   if (margin) {

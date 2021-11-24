@@ -30,6 +30,36 @@ exports[`<View backgroundImageUrl='https://foo/bar.jpg' /> 1`] = `
 </div>
 `;
 
+exports[`<View isHidden={false} /> 1`] = `
+<div>
+  <div
+    class="emotion-0"
+  />
+</div>
+`;
+
+exports[`<View isHidden={true} /> 1`] = `
+.emotion-0 {
+  display: none;
+}
+
+<div>
+  <div
+    class="emotion-0"
+  />
+</div>
+`;
+
+exports[`<View isMounted={false} /> 1`] = `<div />`;
+
+exports[`<View isMounted={true} /> 1`] = `
+<div>
+  <div
+    class="emotion-0"
+  />
+</div>
+`;
+
 exports[`<View margin={10} /> 1`] = `
 .emotion-0 {
   margin: 10px;
