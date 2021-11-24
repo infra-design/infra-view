@@ -9,15 +9,19 @@ export interface ViewProps {
 }
 
 export const View: FC<ViewProps> = (props) => {
-  const { as = 'div', id, position, margin } = props
+  const { as = 'div', id, position, margin, children } = props
 
   const css = {
     position,
     margin,
   }
 
-  return jsx(as, {
-    id,
-    css,
-  })
+  return jsx(
+    as,
+    {
+      id,
+      css,
+    },
+    children,
+  )
 }

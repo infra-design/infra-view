@@ -8,8 +8,18 @@ test('<View />', async () => {
   expect(view.container).toMatchSnapshot()
 })
 
-test(`<View as='button' />`, () => {
-  const view = render(<View as='button' />)
+test('<View><View></View></View>', async () => {
+  const view = render(
+    <View>
+      <View></View>
+    </View>,
+  )
+
+  expect(view.container).toMatchSnapshot()
+})
+
+test(`<View as='button'>Button</View>`, () => {
+  const view = render(<View as='button'>Button</View>)
 
   expect(view.container).toMatchSnapshot()
 })

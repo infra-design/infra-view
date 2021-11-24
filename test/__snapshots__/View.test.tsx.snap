@@ -8,11 +8,13 @@ exports[`<View /> 1`] = `
 </div>
 `;
 
-exports[`<View as='button' /> 1`] = `
+exports[`<View as='button'>Button</View> 1`] = `
 <div>
   <button
     class="emotion-0"
-  />
+  >
+    Button
+  </button>
 </div>
 `;
 
@@ -37,5 +39,17 @@ exports[`<View position='absolute' /> 1`] = `
   <div
     class="emotion-0"
   />
+</div>
+`;
+
+exports[`<View><View></View></View> 1`] = `
+<div>
+  <div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-0"
+    />
+  </div>
 </div>
 `;
