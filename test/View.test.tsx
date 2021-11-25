@@ -78,6 +78,30 @@ test(`<View margin={[10, 10, 10, 10]} />`, () => {
   expect(view.container).toMatchSnapshot()
 })
 
+test(`<View padding={10} />`, () => {
+  const view = render(<View padding={10} />)
+
+  expect(view.container).toMatchSnapshot()
+})
+
+test(`<View padding={[10]} />`, () => {
+  const view = render(<View padding={[10]} />)
+
+  expect(view.container).toMatchSnapshot()
+})
+
+test(`<View padding={[10, 10]} />`, () => {
+  const view = render(<View padding={[10, 10]} />)
+
+  expect(view.container).toMatchSnapshot()
+})
+
+test(`<View padding={[10, 10, 10, 10]} />`, () => {
+  const view = render(<View padding={[10, 10, 10, 10]} />)
+
+  expect(view.container).toMatchSnapshot()
+})
+
 test(`<View backgroundImageUrl='https://foo/bar.jpg' />`, () => {
   const view = render(<View backgroundImageUrl='https://foo/bar.jpg' />)
 
