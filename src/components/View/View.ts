@@ -1,13 +1,15 @@
 import { jsx } from '@emotion/react'
 import { CSSProperties, FC } from 'react'
 
+type Margin = CSSProperties['margin']
+
 export interface ViewProps {
   isMounted?: boolean
   isHidden?: boolean
   id?: string
   as?: string
   position?: CSSProperties['position']
-  margin?: CSSProperties['margin']
+  margin?: Margin | [Margin] | [Margin, Margin] | [Margin, Margin, Margin, Margin]
   backgroundImageUrl?: string
 }
 
@@ -36,7 +38,11 @@ export const View: FC<ViewProps> = (props) => {
   }
 
   if (margin) {
-    css.margin = margin
+    if (Array.isArray(margin)) {
+      css.margin = margin.map((m) => `${m}px`).join(' ')
+    } else {
+      css.margin = margin
+    }
   }
 
   if (backgroundImageUrl) {

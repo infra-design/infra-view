@@ -60,6 +60,42 @@ exports[`<View isMounted={true} /> 1`] = `
 </div>
 `;
 
+exports[`<View margin={[10, 10, 10, 10]} /> 1`] = `
+.emotion-0 {
+  margin: 10px 10px 10px 10px;
+}
+
+<div>
+  <div
+    class="emotion-0"
+  />
+</div>
+`;
+
+exports[`<View margin={[10, 10]} /> 1`] = `
+.emotion-0 {
+  margin: 10px 10px;
+}
+
+<div>
+  <div
+    class="emotion-0"
+  />
+</div>
+`;
+
+exports[`<View margin={[10]} /> 1`] = `
+.emotion-0 {
+  margin: 10px;
+}
+
+<div>
+  <div
+    class="emotion-0"
+  />
+</div>
+`;
+
 exports[`<View margin={10} /> 1`] = `
 .emotion-0 {
   margin: 10px;
