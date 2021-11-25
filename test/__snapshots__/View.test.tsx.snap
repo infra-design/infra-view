@@ -108,6 +108,54 @@ exports[`<View margin={10} /> 1`] = `
 </div>
 `;
 
+exports[`<View marginBottom={10} /> 1`] = `
+.emotion-0 {
+  margin-bottom: 10px;
+}
+
+<div>
+  <div
+    class="emotion-0"
+  />
+</div>
+`;
+
+exports[`<View marginLeft={10} /> 1`] = `
+.emotion-0 {
+  margin-left: 10px;
+}
+
+<div>
+  <div
+    class="emotion-0"
+  />
+</div>
+`;
+
+exports[`<View marginRight={10} /> 1`] = `
+.emotion-0 {
+  margin-right: 10px;
+}
+
+<div>
+  <div
+    class="emotion-0"
+  />
+</div>
+`;
+
+exports[`<View marginTop={10} /> 1`] = `
+.emotion-0 {
+  margin-top: 10px;
+}
+
+<div>
+  <div
+    class="emotion-0"
+  />
+</div>
+`;
+
 exports[`<View padding={[10, 10, 10, 10]} /> 1`] = `
 .emotion-0 {
   padding: 10px 10px 10px 10px;
@@ -147,6 +195,54 @@ exports[`<View padding={[10]} /> 1`] = `
 exports[`<View padding={10} /> 1`] = `
 .emotion-0 {
   padding: 10px;
+}
+
+<div>
+  <div
+    class="emotion-0"
+  />
+</div>
+`;
+
+exports[`<View paddingBottom={10} /> 1`] = `
+.emotion-0 {
+  padding-bottom: 10px;
+}
+
+<div>
+  <div
+    class="emotion-0"
+  />
+</div>
+`;
+
+exports[`<View paddingLeft={10} /> 1`] = `
+.emotion-0 {
+  padding-left: 10px;
+}
+
+<div>
+  <div
+    class="emotion-0"
+  />
+</div>
+`;
+
+exports[`<View paddingRight={10} /> 1`] = `
+.emotion-0 {
+  padding-right: 10px;
+}
+
+<div>
+  <div
+    class="emotion-0"
+  />
+</div>
+`;
+
+exports[`<View paddingTop={10} /> 1`] = `
+.emotion-0 {
+  padding-top: 10px;
 }
 
 <div>

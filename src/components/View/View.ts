@@ -13,7 +13,15 @@ export interface ViewProps {
   as?: string
   position?: CSSProperties['position']
   margin?: Margin | [Margin] | [Margin, Margin] | [Margin, Margin, Margin, Margin]
+  marginTop?: Margin
+  marginRight?: Margin
+  marginBottom?: Margin
+  marginLeft?: Margin
   padding?: Padding | [Padding] | [Padding, Padding] | [Padding, Padding, Padding, Padding]
+  paddingTop?: Padding
+  paddingRight?: Padding
+  paddingBottom?: Padding
+  paddingLeft?: Padding
   backgroundImageUrl?: string
 }
 
@@ -23,7 +31,15 @@ export const View: FC<ViewProps> = (props) => {
     id,
     position,
     margin,
+    marginTop,
+    marginRight,
+    marginBottom,
+    marginLeft,
     padding,
+    paddingTop,
+    paddingRight,
+    paddingBottom,
+    paddingLeft,
     backgroundImageUrl,
     children,
     isMounted = true,
@@ -34,14 +50,20 @@ export const View: FC<ViewProps> = (props) => {
     return null
   }
 
-  const css: CSSProperties = {}
+  const css: CSSProperties = {
+    position,
+    marginTop,
+    marginRight,
+    marginBottom,
+    marginLeft,
+    paddingTop,
+    paddingRight,
+    paddingBottom,
+    paddingLeft,
+  }
 
   if (isHidden) {
     css.display = 'none'
-  }
-
-  if (position) {
-    css.position = position
   }
 
   if (margin) {
