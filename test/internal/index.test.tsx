@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react'
-import { jsx, px } from '.'
+import { jsx, px } from '../../src/internal'
 
 test('internal jsx', async () => {
   const view = render(jsx('div', { css: {} }))
