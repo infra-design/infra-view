@@ -39,7 +39,7 @@ export const App = () => {
       width={20}
       height={20}
       background='black'
-      hover={{
+      hoverStyle={{
         background: 'red',
       }}
       md={{
@@ -114,9 +114,9 @@ export const App = (props) => {
     <Button
       color='gray'
       background='red'
-      hover={{ background: 'blue' }}
-      active={{ background: 'yellow' }}
-      focus={{ borderColor: 'green' }}>
+      hoverStyle={{ background: 'blue' }}
+      activeStyle={{ background: 'yellow' }}
+      focusStyle={{ borderColor: 'green' }}>
       {props.children}
     </Button>
   )
