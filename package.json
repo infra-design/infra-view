@@ -4,7 +4,7 @@
   "description": "Create your UI in a simple way.",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "build": "tsc"
   },
   "repository": {

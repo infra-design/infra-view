@@ -7,3 +7,4 @@ node_modules
 *.d.ts.map
 .DS_Store
 esm
+coverage
