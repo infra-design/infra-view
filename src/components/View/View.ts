@@ -1,5 +1,6 @@
 import { jsx } from '@emotion/react'
 import { CSSProperties, FC } from 'react'
+import { px } from '../../internal'
 
 const { isArray } = Array
 
@@ -87,7 +88,7 @@ export const View: FC<ViewProps> = (props) => {
 
   if (margin) {
     if (isArray(margin)) {
-      css.margin = margin.map((m) => `${m}px`).join(' ')
+      css.margin = margin.map(px).join(' ')
     } else {
       css.margin = margin
     }
@@ -95,7 +96,7 @@ export const View: FC<ViewProps> = (props) => {
 
   if (padding) {
     if (isArray(padding)) {
-      css.padding = padding.map((m) => `${m}px`).join(' ')
+      css.padding = padding.map(px).join(' ')
     } else {
       css.padding = padding
     }
