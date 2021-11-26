@@ -36,9 +36,17 @@ export interface ViewProps extends ViewNormalProps {
   sm?: ViewNormalProps
 }
 
+const defaultValues = {
+  as: 'div',
+  isMounted: true,
+  isHidden: false,
+} as const
+
 export const View: FC<ViewProps> = (props) => {
+  const properties = Object.assign({}, defaultValues, props)
+
   const {
-    as = 'div',
+    as,
     id,
     position,
     margin,
@@ -53,9 +61,9 @@ export const View: FC<ViewProps> = (props) => {
     paddingLeft,
     backgroundImageUrl,
     children,
-    isMounted = true,
-    isHidden = false,
-  } = props
+    isMounted,
+    isHidden,
+  } = properties
 
   if (!isMounted) {
     return null
