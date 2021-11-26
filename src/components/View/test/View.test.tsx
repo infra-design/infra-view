@@ -1,6 +1,5 @@
 import { render } from '@testing-library/react'
-import React from 'react'
-import { View } from '../src'
+import { View } from '../../..'
 
 test('<View />', async () => {
   const view = render(<View />)
