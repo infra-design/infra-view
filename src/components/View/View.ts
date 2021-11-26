@@ -5,13 +5,14 @@ const { isArray } = Array
 
 type Margin = CSSProperties['margin']
 type Padding = CSSProperties['padding']
+type Position = CSSProperties['position']
 
-export interface ViewProps {
+interface ViewNormalProps {
   isMounted?: boolean
   isHidden?: boolean
   id?: string
   as?: string
-  position?: CSSProperties['position']
+  position?: Position
   margin?: Margin | [Margin] | [Margin, Margin] | [Margin, Margin, Margin, Margin]
   marginTop?: Margin
   marginRight?: Margin
@@ -23,6 +24,16 @@ export interface ViewProps {
   paddingBottom?: Padding
   paddingLeft?: Padding
   backgroundImageUrl?: string
+}
+
+export interface ViewProps extends ViewNormalProps {
+  externalProps?: ViewNormalProps
+  xxxl?: ViewNormalProps
+  xxl?: ViewNormalProps
+  xl?: ViewNormalProps
+  lg?: ViewNormalProps
+  md?: ViewNormalProps
+  sm?: ViewNormalProps
 }
 
 export const View: FC<ViewProps> = (props) => {
