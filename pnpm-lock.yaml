@@ -7,6 +7,7 @@ specifiers:
   '@testing-library/react': ^12.1.2
   '@types/jest': ^27.0.3
   '@types/react': ^17.0.37
+  '@types/react-dom': ^17.0.11
   '@types/web': ^0.0.46
   eslint: ^8.3.0
   jest: ^27.3.1
@@ -23,6 +24,7 @@ devDependencies:
   '@testing-library/react': 12.1.2_react-dom@17.0.2+react@17.0.2
   '@types/jest': 27.0.3
   '@types/react': 17.0.37
+  '@types/react-dom': 17.0.11
   '@types/web': 0.0.46
   eslint: 8.3.0
   jest: 27.3.1_ts-node@10.4.0
@@ -881,6 +883,12 @@ packages:
 
   /@types/prop-types/15.7.4:
     resolution: {integrity: sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==}
+    dev: true
+
+  /@types/react-dom/17.0.11:
+    resolution: {integrity: sha512-f96K3k+24RaLGVu/Y2Ng3e1EbZ8/cVJvypZWd7cy0ofCBaf2lcM46xNhycMZ2xGwbBjRql7hOlZ+e2WlJ5MH3Q==}
+    dependencies:
+      '@types/react': 17.0.37
     dev: true
 
   /@types/react/17.0.37:
