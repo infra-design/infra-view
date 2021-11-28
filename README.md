@@ -212,6 +212,34 @@ export const App = () => {
 }
 ```
 
+#### Last child style
+
+```jsx
+import { View } from 'infra-view'
+
+export const App = () => {
+  return (
+    <>
+      <View
+        border={{
+          color: 'red',
+          width: 1,
+          style: 'solid',
+        }}
+        lastChildStyle={{
+          border: {
+            color: 'blue',
+            width: 2,
+            style: 'dashed',
+          },
+        }}>
+        Last child
+      </View>
+    </>
+  )
+}
+```
+
 ### Layout
 
 We recommend to use `Layout` components to create your layout without direct use of `View` component.
