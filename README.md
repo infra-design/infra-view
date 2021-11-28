@@ -202,8 +202,11 @@ import { View } from 'infra-view'
 export const App = () => {
   return (
     <>
-      <View mount={true}>Mount</View>
-      <View hidden={true}>Hidden</View>
+      {/* same as { isMounted && <View /> } */}
+      <View isMounted={true}>isMounted</View>
+
+      {/* same as <div display='none' /> */}
+      <View isHidden={true}>isHidden</View>
     </>
   )
 }
