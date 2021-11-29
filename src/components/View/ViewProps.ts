@@ -24,6 +24,10 @@ interface ViewNormalStyle {
   paddingRight?: Padding
   paddingBottom?: Padding
   paddingLeft?: Padding
+  /**
+   * @example
+   *   <View backgroundImageUrl="https://foo.com/bar.jpg" />
+   */
   backgroundImageUrl?: BackgroundImage
   background?:
     | Background
@@ -42,11 +46,14 @@ interface ViewNormalStyle {
         style: CSSProperties['borderStyle']
         radius: BorderRadius
       }
+  /**
+   * @example
+   *   <View borderRadius={10} />
+   */
   borderRadius?: BorderRadius
 }
 
 export interface ViewStyleProps extends ViewNormalStyle {
-  // conditional styles
   hoverStyle?: ViewNormalStyle
   focusStyle?: ViewNormalStyle
   activeStyle?: ViewNormalStyle
@@ -55,7 +62,6 @@ export interface ViewStyleProps extends ViewNormalStyle {
   lastChildStyle?: ViewNormalStyle
   firstChildStyle?: ViewNormalStyle
 
-  // group style props
   group?: boolean | string
   groupHoverStyle?: ViewNormalStyle
   groupActiveStyle?: ViewNormalStyle
@@ -83,6 +89,11 @@ export interface ViewProps extends ViewStyleProps {
   id?: string
   as?: string
 
+  /**
+   * @description
+   *   `externalProps` is a way to pass props to the component.
+   *   It is useful when you want to pass props to the component that is not defined in the component.
+   */
   externalProps?: ViewStyleProps
   xxxl?: ViewStyleProps
   xxl?: ViewStyleProps
