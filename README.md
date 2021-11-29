@@ -24,16 +24,16 @@ pnpm add infra-view
 
 ### Base
 
-#### View
+#### Div
 
 Try to use full spellings instead of abbreviations, which will reduce the mental burden when developing. And we provide intelligent completions, so the time spent using abbreviations and full spellings is not too different.
 
 ```jsx
-import { View } from 'infra-view'
+import { Div } from 'infra-view'
 
 export const App = () => {
   return (
-    <View
+    <Div
       display='block'
       margin={100}
       width={20}
@@ -53,7 +53,7 @@ export const App = () => {
         height: 30,
       }}>
       UI
-    </View>
+    </Div>
   )
 }
 ```
@@ -61,10 +61,10 @@ export const App = () => {
 ##### Merge and extend
 
 ```jsx
-import { View } from 'infra-view'
+import { Div } from 'infra-view'
 
 const Component = (props) => {
-  return <View margin={20} md={{ margin: 30 }} externalProps={props} />
+  return <Div margin={20} md={{ margin: 30 }} externalProps={props} />
 }
 
 export const App = () => {
@@ -79,11 +79,11 @@ export const App = () => {
 ##### Responsive
 
 ```jsx
-import { View } from 'infra-view'
+import { Div } from 'infra-view'
 
 export const App = () => {
   return (
-    <View
+    <Div
       margin={1}
       padding={1}
       md={{ margin: 2, padding: 2 }}
@@ -97,10 +97,10 @@ export const App = () => {
 ##### DisplayName
 
 ```jsx
-import { View } from 'infra-view'
+import { Div } from 'infra-view'
 
 export const App = () => {
-  return <View displayName='test'></View>
+  return <Div displayName='test'></Div>
 }
 ```
 
@@ -128,13 +128,13 @@ export const App = (props) => {
 Easy switch between components. Defaults to `div`.
 
 ```jsx
-import { View } from 'infra-view'
+import { Div } from 'infra-view'
 
 export const App = () => {
   return (
-    <View as='div'>
-      <View as='button'>Button</View>
-    </View>
+    <Div as='div'>
+      <Div as='button'>Button</Div>
+    </Div>
   )
 }
 ```
@@ -147,7 +147,7 @@ import { P, Span } from 'infra-view'
 export const App = () => {
   return (
     <P>
-      Same as use <Span>View</Span> as p.
+      Same as use <Span>Div</Span> as p.
     </P>
   )
 }
@@ -156,13 +156,13 @@ export const App = () => {
 #### Combo
 
 ```jsx
-import { View } from 'infra-view'
+import { Div } from 'infra-view'
 
 export const App = () => {
   return (
     <>
-      <View padding={[1, 2, 3, 4]}></View>
-      <View
+      <Div padding={[1, 2, 3, 4]}></Div>
+      <Div
         text={{
           family: 'sans-serif',
           size: 16,
@@ -170,8 +170,8 @@ export const App = () => {
           color: 'red',
         }}>
         Text
-      </View>
-      <View
+      </Div>
+      <Div
         background={{
           color: 'gray',
           image: 'http://www.demo.com/demo.jpg',
@@ -180,15 +180,15 @@ export const App = () => {
           size: 'cover',
         }}>
         Background
-      </View>
-      <View
+      </Div>
+      <Div
         border={{
           color: 'red',
           width: 1,
           style: 'solid',
         }}>
         Border
-      </View>
+      </Div>
     </>
   )
 }
@@ -197,16 +197,16 @@ export const App = () => {
 #### Conditional
 
 ```jsx
-import { View } from 'infra-view'
+import { Div } from 'infra-view'
 
 export const App = () => {
   return (
     <>
-      {/* same as { isMounted && <View /> } */}
-      <View isMounted={true}>isMounted</View>
+      {/* same as { isMounted && <Div /> } */}
+      <Div isMounted={true}>isMounted</Div>
 
       {/* same as <div display='none' /> */}
-      <View isHidden={true}>isHidden</View>
+      <Div isHidden={true}>isHidden</Div>
     </>
   )
 }
@@ -215,12 +215,12 @@ export const App = () => {
 #### Last child style
 
 ```jsx
-import { View } from 'infra-view'
+import { Div } from 'infra-view'
 
 export const App = () => {
   return (
     <>
-      <View
+      <Div
         border={{
           color: 'red',
           width: 1,
@@ -234,7 +234,7 @@ export const App = () => {
           },
         }}>
         Last child
-      </View>
+      </Div>
     </>
   )
 }
@@ -242,7 +242,7 @@ export const App = () => {
 
 ### Layout
 
-We recommend to use `Layout` components to create your layout without direct use of `View` component.
+We recommend to use `Layout` components to create your layout without direct use of `Div` component.
 
 #### Flex
 
@@ -336,7 +336,7 @@ export const App = () => {
 #### Container
 
 ```jsx
-import { Container, View } from 'infra-view'
+import { Container, Div } from 'infra-view'
 
 export const App = () => {
   return (
@@ -351,7 +351,7 @@ export const App = () => {
         padding: 30,
         margin: 30,
       }}>
-      <View>UI</View>
+      <Div>UI</Div>
     </Container>
   )
 }
@@ -362,13 +362,13 @@ export const App = () => {
 #### Usage
 
 ```jsx
-import { View, useTheme } from 'infra-view'
+import { Div, useTheme } from 'infra-view'
 
 export const App = () => {
   const { fontSize, lineHeight } = useTheme()
 
   return (
-    <View
+    <Div
       fontSize={fontSize[0]}
       lineHeight={lineHeight[1]}
       md={{
@@ -376,7 +376,7 @@ export const App = () => {
         lineHeight: lineHeight[3],
       }}>
       Theme
-    </View>
+    </Div>
   )
 }
 ```
