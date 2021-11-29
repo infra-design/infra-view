@@ -22,7 +22,7 @@
   "homepage": "https://github.com/infra-design/infra-view#readme",
   "devDependencies": {
     "@emotion/jest": "^11.6.0",
-    "@emotion/react": "^11.6.0",
+    "@emotion/react": "^11.7.0",
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.0.3",

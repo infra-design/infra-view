@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@emotion/jest': ^11.6.0
-  '@emotion/react': ^11.6.0
+  '@emotion/react': ^11.7.0
   '@testing-library/jest-dom': ^5.15.1
   '@testing-library/react': ^12.1.2
   '@types/jest': ^27.0.3
@@ -19,7 +19,7 @@ specifiers:
 
 devDependencies:
   '@emotion/jest': 11.6.0_@types+jest@27.0.3
-  '@emotion/react': 11.6.0_cfedea9b3ed0faf0dded75c187406c5e
+  '@emotion/react': 11.7.0_cfedea9b3ed0faf0dded75c187406c5e
   '@testing-library/jest-dom': 5.15.1
   '@testing-library/react': 12.1.2_react-dom@17.0.2+react@17.0.2
   '@types/jest': 27.0.3
@@ -62,7 +62,7 @@ packages:
       '@babel/traverse': 7.16.3
       '@babel/types': 7.16.0
       convert-source-map: 1.8.0
-      debug: 4.3.2
+      debug: 4.3.3
       gensync: 1.0.0-beta.2
       json5: 2.2.0
       semver: 6.3.0
@@ -374,7 +374,7 @@ packages:
       '@babel/helper-split-export-declaration': 7.16.0
       '@babel/parser': 7.16.4
       '@babel/types': 7.16.0
-      debug: 4.3.2
+      debug: 4.3.3
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
@@ -448,8 +448,8 @@ packages:
     resolution: {integrity: sha512-igX9a37DR2ZPGYtV6suZ6whr8pTFtyHL3K/oLUotxpSVO2ASaprmAe2Dkq7tBo7CRY7MMDrAa9nuQP9/YG8FxQ==}
     dev: true
 
-  /@emotion/react/11.6.0_cfedea9b3ed0faf0dded75c187406c5e:
-    resolution: {integrity: sha512-23MnRZFBN9+D1lHXC5pD6z4X9yhPxxtHr6f+iTGz6Fv6Rda0GdefPrsHL7otsEf+//7uqCdT5QtHeRxHCERzuw==}
+  /@emotion/react/11.7.0_cfedea9b3ed0faf0dded75c187406c5e:
+    resolution: {integrity: sha512-WL93hf9+/2s3cA1JVJlz8+Uy6p6QWukqQFOm2OZO5ki51hfucHMOmbSjiyC3t2Y4RI8XUmBoepoc/24ny/VBbA==}
     peerDependencies:
       '@babel/core': ^7.0.0
       '@types/react': '*'
@@ -502,7 +502,7 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dependencies:
       ajv: 6.12.6
-      debug: 4.3.2
+      debug: 4.3.3
       espree: 9.1.0
       globals: 13.12.0
       ignore: 4.0.6
@@ -519,7 +519,7 @@ packages:
     engines: {node: '>=10.10.0'}
     dependencies:
       '@humanwhocodes/object-schema': 1.2.1
-      debug: 4.3.2
+      debug: 4.3.3
       minimatch: 3.0.4
     transitivePeerDependencies:
       - supports-color
@@ -972,7 +972,7 @@ packages:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
     engines: {node: '>= 6.0.0'}
     dependencies:
-      debug: 4.3.2
+      debug: 4.3.3
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1168,7 +1168,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001283
-      electron-to-chromium: 1.4.2
+      electron-to-chromium: 1.4.4
       escalade: 3.1.1
       node-releases: 2.0.1
       picocolors: 1.0.0
@@ -1361,8 +1361,8 @@ packages:
       whatwg-url: 8.7.0
     dev: true
 
-  /debug/4.3.2:
-    resolution: {integrity: sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw==}
+  /debug/4.3.3:
+    resolution: {integrity: sha512-/zxw5+vh1Tfv+4Qn7a5nsbcJKPaSvCDhojn6FEl9vupwK2VCSDtEiEtqr8DFtzYFOdz63LBkxec7DYuc2jon6Q==}
     engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
@@ -1433,8 +1433,8 @@ packages:
       webidl-conversions: 5.0.0
     dev: true
 
-  /electron-to-chromium/1.4.2:
-    resolution: {integrity: sha512-SxHMmlSvpT83M/MLxTXQBqfqo3bK+UOk6Uup6w1paX86l+af1xwwTMLlyK3xJwE3Kq8/QnecuFKmnmRlAUJCXw==}
+  /electron-to-chromium/1.4.4:
+    resolution: {integrity: sha512-teHtgwcmVcL46jlFvAaqjyiTLWuMrUQO1JqV303JKB4ysXG6m8fXSFhbjal9st0r9mNskI22AraJZorb1VcLVg==}
     dev: true
 
   /emittery/0.8.1:
@@ -1524,7 +1524,7 @@ packages:
       ajv: 6.12.6
       chalk: 4.1.2
       cross-spawn: 7.0.3
-      debug: 4.3.2
+      debug: 4.3.3
       doctrine: 3.0.0
       enquirer: 2.3.6
       escape-string-regexp: 4.0.0
@@ -1807,7 +1807,7 @@ packages:
     dependencies:
       '@tootallnate/once': 1.1.2
       agent-base: 6.0.2
-      debug: 4.3.2
+      debug: 4.3.3
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1817,7 +1817,7 @@ packages:
     engines: {node: '>= 6'}
     dependencies:
       agent-base: 6.0.2
-      debug: 4.3.2
+      debug: 4.3.3
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1970,7 +1970,7 @@ packages:
     resolution: {integrity: sha512-n3s8EwkdFIJCG3BPKBYvskgXGoy88ARzvegkitk60NxRdwltLOTaH7CUiMRXvwYorl0Q712iEjcWB+fK/MrWVw==}
     engines: {node: '>=10'}
     dependencies:
-      debug: 4.3.2
+      debug: 4.3.3
       istanbul-lib-coverage: 3.2.0
       source-map: 0.6.1
     transitivePeerDependencies:
