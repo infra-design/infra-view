@@ -36,7 +36,7 @@ test('<View isHidden={true} />', () => {
 })
 
 test('<View isHidden={false} />', () => {
-  const view = render(<View isHidden={false} />)
+  const view = render(<View />)
 
   expect(view.container).toMatchSnapshot()
 })

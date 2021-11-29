@@ -1,41 +1,9 @@
 import { jsx } from '@emotion/react'
 import { CSSProperties, FC } from 'react'
 import { px } from '../../internal'
+import { ViewProps } from './ViewProps'
 
 const { isArray } = Array
-
-type Margin = CSSProperties['margin']
-type Padding = CSSProperties['padding']
-type Position = CSSProperties['position']
-
-interface ViewNormalProps {
-  isMounted?: boolean
-  isHidden?: boolean
-  id?: string
-  as?: string
-  position?: Position
-  margin?: Margin | [Margin] | [Margin, Margin] | [Margin, Margin, Margin, Margin]
-  marginTop?: Margin
-  marginRight?: Margin
-  marginBottom?: Margin
-  marginLeft?: Margin
-  padding?: Padding | [Padding] | [Padding, Padding] | [Padding, Padding, Padding, Padding]
-  paddingTop?: Padding
-  paddingRight?: Padding
-  paddingBottom?: Padding
-  paddingLeft?: Padding
-  backgroundImageUrl?: string
-}
-
-export interface ViewProps extends ViewNormalProps {
-  externalProps?: ViewNormalProps
-  xxxl?: ViewNormalProps
-  xxl?: ViewNormalProps
-  xl?: ViewNormalProps
-  lg?: ViewNormalProps
-  md?: ViewNormalProps
-  sm?: ViewNormalProps
-}
 
 const defaultValues = {
   as: 'div',
