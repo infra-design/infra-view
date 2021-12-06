@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage",
-    "build": "tsc -p tsconfig.build.json"
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rm -rf esm && rm -rf coverage && rm ./tsconfig.build.tsbuildinfo"
   },
   "repository": {
     "type": "git",
