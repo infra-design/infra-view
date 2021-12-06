@@ -6,7 +6,7 @@
   "types": "esm/index.d.ts",
   "scripts": {
     "test": "jest --coverage",
-    "test:ci": "jest --ci --coverage && codecov",
+    "test:ci": "jest --ci --coverage",
     "build": "tsc -p tsconfig.build.json",
     "clean": "rm -rf esm && rm -rf coverage && rm ./tsconfig.build.tsbuildinfo"
   },
