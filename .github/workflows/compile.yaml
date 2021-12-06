@@ -27,7 +27,12 @@ jobs:
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ matrix.node-version }}-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: ${{ runner.os }}-build-${{ env.cache-name }}-${{ matrix.node-version }}-
       - run: pnpm install --frozen-lockfile
+      - name: Codecov
+        uses: codecov/codecov-action@v2
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          flags: unittests
       - name: test
-        run: pnpm run test
+        run: pnpm run test:ci
       - name: compile
         run: pnpm run build
