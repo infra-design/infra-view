@@ -84,6 +84,11 @@ export interface ViewStyleProps extends ViewNormalStyle {
 
 export interface ViewProps extends ViewStyleProps {
   /**
+   * @description set a group name for the child view hover or other style
+   */
+  group?: boolean | string
+
+  /**
    * @description if isMounted is true, the component will be mounted
    * @default true
    * @example <View isMounted={true} />
@@ -101,6 +106,10 @@ export interface ViewProps extends ViewStyleProps {
    * @description the id of the component
    */
   id?: string
+
+  /**
+   * @description the target name of the component
+   */
   as?: string
 
   /**

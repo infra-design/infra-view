@@ -9,6 +9,7 @@ const defaultValues = {
   as: 'div',
   isMounted: true,
   isHidden: false,
+  group: 'group',
 } as const
 
 export const View: FC<ViewProps> = (props) => {
@@ -34,6 +35,7 @@ export const View: FC<ViewProps> = (props) => {
     children,
     isMounted,
     isHidden,
+    group,
   } = properties
 
   if (!isMounted) {
@@ -81,6 +83,7 @@ export const View: FC<ViewProps> = (props) => {
     {
       id,
       css,
+      className: group,
     },
     children,
   )
