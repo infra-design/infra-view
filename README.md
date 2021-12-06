@@ -6,7 +6,7 @@ Create your UI in a simple way.
 
 [![Compile](https://github.com/infra-design/infra-view/actions/workflows/compile.yaml/badge.svg?branch=master)](https://github.com/infra-design/infra-view/actions/workflows/compile.yaml)
 [![codecov](https://codecov.io/gh/infra-design/infra-view/branch/master/graph/badge.svg?token=KYFD3MFQWA)](https://codecov.io/gh/infra-design/infra-view)
-[![npm](https://www.npmjs.com/package/@infra-design/infra-view)](https://img.shields.io/npm/v/@infra-design/infra-view)
+[![npm](https://img.shields.io/npm/v/@infra-design/infra-view)](https://www.npmjs.com/package/@infra-design/infra-view)
 
 ## Installation
 
