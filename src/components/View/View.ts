@@ -9,7 +9,6 @@ const defaultValues = {
   as: 'div',
   isMounted: true,
   isHidden: false,
-  group: 'group',
 } as const
 
 export const View: FC<ViewProps> = (props) => {
