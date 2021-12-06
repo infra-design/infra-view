@@ -14,6 +14,8 @@ const defaultValues = {
 export const View: FC<ViewProps> = (props) => {
   const properties = Object.assign({}, defaultValues, props)
 
+  // Object.keys(properties).filter((key) => !cssProperties.includes(key))
+
   const {
     as,
     id,

@@ -3,6 +3,12 @@ import { CSSProperties } from 'react'
 type Margin = CSSProperties['margin']
 type Padding = CSSProperties['padding']
 type Position = CSSProperties['position']
+type Width = CSSProperties['width']
+type Height = CSSProperties['height']
+type Left = CSSProperties['left']
+type Top = CSSProperties['top']
+type Right = CSSProperties['right']
+type Bottom = CSSProperties['bottom']
 type Background = CSSProperties['background']
 type Border = CSSProperties['border']
 type BorderRadius = CSSProperties['borderRadius']
@@ -14,11 +20,19 @@ type BackgroundColor = CSSProperties['backgroundColor']
 
 interface ViewNormalStyle {
   position?: Position
+  width?: Width
+  height?: Height
+  left?: Left
+  top?: Top
+  right?: Right
+  bottom?: Bottom
+
   margin?: Margin | [Margin] | [Margin, Margin] | [Margin, Margin, Margin, Margin]
   marginTop?: Margin
   marginRight?: Margin
   marginBottom?: Margin
   marginLeft?: Margin
+
   padding?: Padding | [Padding] | [Padding, Padding] | [Padding, Padding, Padding, Padding]
   paddingTop?: Padding
   paddingRight?: Padding
