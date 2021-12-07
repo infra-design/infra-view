@@ -1,6 +1,7 @@
 import { jsx } from '@emotion/react'
 import { CSSProperties, FC } from 'react'
 import { px } from '../../internal'
+import { filterStyleProps } from './utils'
 import { ViewProps } from './ViewProps'
 
 const { isArray } = Array
@@ -13,63 +14,33 @@ const defaultValues = {
 
 export const View: FC<ViewProps> = (props) => {
   const properties = Object.assign({}, defaultValues, props)
+  const normalStyleProperties = filterStyleProps(properties)
 
-  // Object.keys(properties).filter((key) => !cssProperties.includes(key))
-
-  const {
-    as,
-    id,
-    position,
-    margin,
-    marginTop,
-    marginRight,
-    marginBottom,
-    marginLeft,
-    padding,
-    paddingTop,
-    paddingRight,
-    paddingBottom,
-    paddingLeft,
-    backgroundImageUrl,
-    children,
-    isMounted,
-    isHidden,
-    group,
-  } = properties
+  const { as, id, children, isMounted, isHidden, group, backgroundImageUrl } = properties
 
   if (!isMounted) {
     return null
   }
 
-  const css: CSSProperties = {
-    position,
-    marginTop,
-    marginRight,
-    marginBottom,
-    marginLeft,
-    paddingTop,
-    paddingRight,
-    paddingBottom,
-    paddingLeft,
-  }
+  const css: CSSProperties = normalStyleProperties
 
   if (isHidden) {
     css.display = 'none'
   }
 
-  if (margin) {
-    if (isArray(margin)) {
-      css.margin = margin.map(px).join(' ')
+  if (css.margin) {
+    if (isArray(css.margin)) {
+      css.margin = css.margin.map(px).join(' ')
     } else {
-      css.margin = margin
+      css.margin = css.margin
     }
   }
 
-  if (padding) {
-    if (isArray(padding)) {
-      css.padding = padding.map(px).join(' ')
+  if (css.padding) {
+    if (isArray(css.padding)) {
+      css.padding = css.padding.map(px).join(' ')
     } else {
-      css.padding = padding
+      css.padding = css.padding
     }
   }
 
