@@ -3,7 +3,7 @@ import { mediaBreakpointsKeys } from './mediaBreakpoints'
 
 export const cleanObject = (obj: Record<string, any>) => {
   for (const key in obj) {
-    if (obj[key] === undefined || obj[key] === null) {
+    if (obj[key] === undefined || obj[key] === null || obj[key] === '') {
       delete obj[key]
     }
   }
